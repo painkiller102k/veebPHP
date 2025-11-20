@@ -25,7 +25,7 @@ include("nav.php");
         if(isset($_GET['link'])){
         include('content/'.$_GET['link']);
         } else {
-            include('content/avaleht.php');
+            include('content/avaLeht.php');
         }
         ?>
     </div>
