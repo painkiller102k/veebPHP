@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li><a href="?link=avaleht.php">Avaleht</a></li>
+        <li><a href="?link=avaLeht.php">Avaleht</a></li>
         <li><a href="?link=gitKasutamine.php">GIT käsud</a></li>
         <li><a href="?link=kalkulaator.php">Joogikalkulaator JS Ülesanne</a></li>
         <li><a href="?link=muusikakusitlus.php">Muusika küsitlus JS Ülesanne</a></li>
