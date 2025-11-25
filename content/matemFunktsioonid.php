@@ -61,5 +61,49 @@ echo $nimi;
 echo "<br>";
 printf("Tere %s %s", $nimi, $perenimi);
 echo "<br>";
+?>
 
-echo "<h4>Omistamise operaatorid</h4>";
+<?php
+echo "<h5>Mõistatus: kaks arvud </h5>";
+$nr1 = 7;
+$nr2 = 17;
+
+echo "<ol>";
+echo "<li>Esimene arv on 1-10</li>";
+echo "<li>Teine arv on 10-20</li>";
+echo "<li>".($nr1 + $nr2)." - kahe arvu summa</li>";
+echo "<li>".pow($nr1,2)." - astendamine esimene arv²</li>";
+echo "<li>".($nr1 * $nr2)." - kahe arvu korrutis</li>";
+echo "</ol>";
+?>
+
+<form name="arvkontroll" action="<?= $_SERVER['REQUEST_URI'] ?>" method="post">
+    <label for="esimene">Sisesta esimene number:</label>
+    <input type="text" id="esimene" name="esimene"><br><br>
+
+    <label for="teine">Sisesta teine number:</label>
+    <input type="text" id="teine" name="teine"><br><br>
+    <input type="submit" value="Kontrolli">
+</form>
+
+<?php
+if(isset($_REQUEST['esimene']) && isset($_REQUEST['teine'])){
+    $esimene = (int)$_REQUEST['esimene'];
+    $teine = (int)$_REQUEST['teine'];
+
+    if($esimene == $nr1 && $teine == $nr2){
+        echo "Õige! Kõik numbrid on õiged = ".$esimene." ja ".$teine.".";
+    } elseif($esimene == $nr1){
+        echo "Esimene arv ".$esimene." on õige, aga teine on vale!";
+    } elseif($teine == $nr2){
+        echo "Teine arv ".$teine." on õige, aga esimene on vale!";
+    } else {
+        echo "Kõik arved on vale!";
+    }
+}
+?>
+
+
+
+
+
