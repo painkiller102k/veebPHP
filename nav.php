@@ -19,6 +19,7 @@
                         <li><a href="?link=matemFunktsioonid.php">Matemaatika funktsioonid</a></li>
                     </ul>
                 </li>
+                <li><a href="?link=tooPildifailidega.php">PHP töö pildifailidega</a></li>
                 <li><a href="https://martinrossakov24.thkit.ee/" target="_blank">Vana Index</a></li>
             </ul>
         </nav>
