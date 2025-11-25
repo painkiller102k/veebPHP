@@ -1,3 +1,4 @@
+<body onload="juhuslikPilt(); juhuslikjook();">
 <h1>Random pilti näitamine</h1>
 <table>
     <tr>
@@ -11,10 +12,10 @@
             <label for="valikud">Vali mida sa näed pildil:</label>
             <select name="valikud" id="valikud" onchange="teeOmaValik()">
                 <option value="">- - - - -</option>
-                <option value="image/1.png">Tõsine</option>
-                <option value="image/2.png">Õnnelik</option>
-                <option value="image/3.png">Kummaline</option>
-                <option value="image/4.png">Vihane</option>
+                <option value="pildid/1.png">Tõsine</option>
+                <option value="pildid/2.png">Õnnelik</option>
+                <option value="pildid/3.png">Kummaline</option>
+                <option value="pildid/4.png">Vihane</option>
             </select>
         </td>
     </tr>
@@ -41,19 +42,19 @@
         <td id="vastuss">Vastus :</td>
         <td>
             <label>Vali jook:</label><br>
-            <input type="radio" name="valikudd" id="cola" value="image/cola.png" onchange="jookvalik()">
+            <input type="radio" name="valikudd" id="cola" value="pildidd/cola.png" onchange="jookvalik()">
             <label for="cola">ColaCola</label><br>
 
-            <input type="radio" name="valikudd" id="fanta" value="image/fanta.png" onchange="jookvalik()">
+            <input type="radio" name="valikudd" id="fanta" value="pildidd/fanta.png" onchange="jookvalik()">
             <label for="fanta">Fanta</label><br>
 
-            <input type="radio" name="valikudd" id="pepper" value="image/pepper.png" onchange="jookvalik()">
+            <input type="radio" name="valikudd" id="pepper" value="pildidd/pepper.png" onchange="jookvalik()">
             <label for="pepper">Dr. Pepper</label><br>
 
-            <input type="radio" name="valikudd" id="pepsi" value="image/pepsi.png" onchange="jookvalik()">
+            <input type="radio" name="valikudd" id="pepsi" value="pildidd/pepsi.png" onchange="jookvalik()">
             <label for="pepsi">Pepsi</label><br>
 
-            <input type="radio" name="valikudd" id="sprite" value="image/sprite.png" onchange="jookvalik()">
+            <input type="radio" name="valikudd" id="sprite" value="pildidd/sprite.png" onchange="jookvalik()">
             <label for="sprite">Sprite</label><br>
         </td>
     </tr>
@@ -71,3 +72,4 @@
         </td>
     </tr>
 </table>
+</body>
