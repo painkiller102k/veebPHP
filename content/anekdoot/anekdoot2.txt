@@ -1,0 +1,5 @@
+Arst: "Mul on kaks halba uudist."
+Patsient: "Mis on esimene?"
+Arst: "Teil on elada vaid 24 tundi."
+Patsient: "Ja teine?"
+Arst: "Unustasin eile öelda."
